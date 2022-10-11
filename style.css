@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(101, 201, 234, 0.509);
+}
+.clock{
+    width: 17rem;
+    height: 19rem;
+    border-radius: 50%;
+    border: 20px solid white;
+    position: relative;
+}
+.hand{
+    height: 0.5rem;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+.sec_hand{
+    transition-timing-function: ;
+    transition: all 0.05s;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.62, -0.03, 0, 2.71);
+}
